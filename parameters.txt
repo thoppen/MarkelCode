@@ -1,0 +1,135 @@
+    [Parameter(Mandatory=$True)][String]$Type,               # Type
+    [Parameter(Mandatory=$True)][String]$ciStatus,           # CI Status 
+    [Parameter(Mandatory=$True)][String]$assetTag,           # Asset Tag 
+    [Parameter(Mandatory=$True)][String]$manufacturer,       # Manufacturer 
+    [Parameter(Mandatory=$True)][String]$model,              # Model 
+    [Parameter(Mandatory=$True)][String]$serialNumber,       # Serial Number 
+    [Parameter(Mandatory=$True)][String]$networkIdentifier,  # Network Identifier
+    [Parameter(Mandatory=$True)][String]$responsiblePerson,  # Responsible Person
+    [Parameter(Mandatory=$True)][String]$mainUser,           # Main User
+    [Parameter(Mandatory=$True)][String]$deploymentType,     # Deployment Type
+    [Parameter(Mandatory=$True)][String]$systemType,         # System Type
+    [Parameter(Mandatory=$True)][String]$numberOfCores,      # Number of Cores 
+    [Parameter(Mandatory=$True)][String]$numberOfCpus,       # Number of CPUs
+    [Parameter(Mandatory=$True)][String]$location,           # Location 
+    [Parameter(Mandatory=$True)][String]$roleInCharge,       # Role In Charge
+    [Parameter(Mandatory=$True)][String]$functionalDomain,   # Functional Domain
+    [Parameter(Mandatory=$True)][String]$ipAddress,          # IP Address
+    [Parameter(Mandatory=$True)][String]$totalCdisk,         # Total C Disk (gb) 
+    [Parameter(Mandatory=$True)][String]$totalRam,           # Total RAM (GB) 
+    [Parameter(Mandatory=$True)][String]$itGroup,            # IT Group 
+    [Parameter(Mandatory=$True)][String]$itSubGroup,         # IT Sub Group
+    [Parameter(Mandatory=$True)][String]$nsxZone,            # NSX-Zone
+    [Parameter(Mandatory=$True)][String]$totalDisk,          # Total Disk
+    [Parameter(Mandatory=$True)][String]$serverFunction,     # Server Function 
+    [Parameter(Mandatory=$True)][String]$hostedBusinessApp   # Hosted Business Application
+	
+	$Type              
+    $ciStatus          
+    $assetTag          
+    $manufacturer      
+    $model             
+    $serialNumber      
+    $networkIdentifier 
+    $responsiblePerson 
+    $mainUser          
+    $deploymentType    
+    $systemType        
+    $numberOfCores     
+    $numberOfCpus      
+    $location          
+    $roleInCharge      
+    $functionalDomain  
+    $ipAddress         
+    $totalCdisk        
+    $totalRam          
+    $itGroup           
+    $itSubGroup        
+    $nsxZone           
+    $totalDisk         
+    $serverFunction    
+    $hostedBusinessApp  
+	
+	'Type'
+    'CI Status'
+    'Asset Tag' 
+    'Manufacturer' 
+    'Model'
+    'Serial Number'
+    'Network Identifier'
+    'Responsible Person'
+    'Main User'
+    'Deployment Type'
+    'System Type'
+    'Number of Cores'
+    'Number of CPUs'
+    'Location'
+    'Role In Charge'
+    'Functional Domain'
+    'IP Address'
+    'Total C Disk (gb)'
+    'Total RAM (GB)'
+    'IT Group'
+    'IT Sub Group'
+    'NSX-Zone'
+    'Total Disk'
+    'Server Function'
+    'Hosted Business Application'
+	
+$Output = [PSCustomObject][Ordered]@{
+    'Type'                          =  $Type             
+	'CI Status'                     =  $ciStatus         
+    'Asset Tag'                     =  $assetTag         
+    'Manufacturer'                  =  $manufacturer     
+    'Model'                         =  $model            
+    'Serial Number'                 =  $serialNumber     
+    'Network Identifier'            =  $networkIdentifier
+    'Responsible Person'            =  $responsiblePerson
+    'Main User'                     =  $mainUser         
+    'Deployment Type'               =  $deploymentType   
+    'System Type'                   =  $systemType       
+    'Number of Cores'               =  $numberOfCores    
+    'Number of CPUs'                =  $numberOfCpus     
+    'Location'                      =  $location         
+    'Role In Charge'                =  $roleInCharge     
+    'Functional Domain'             =  $functionalDomain 
+    'IP Address'                    =  $ipAddress        
+    'Total C Disk (gb)'             =  $totalCdisk       
+    'Total RAM (GB)'                =  $totalRam         
+    'IT Group'                      =  $itGroup          
+    'IT Sub Group'                  =  $itSubGroup       
+    'NSX-Zone'                      =  $nsxZone          
+    'Total Disk'                    =  $totalDisk        
+    'Server Function'               =  $serverFunction   
+    'Hosted Business Application'   =  $hostedBusinessApp
+}
+
+
+-Type Test1 
+-ciStatus Test2  
+-assetTag Test3   
+-manufacturer Test4
+-model Test5     
+-serialNumber Test6
+-networkIdentifier Test7
+-responsiblePerson Test8
+-mainUser Test9   
+-deploymentType Test10
+-systemType Test11
+-numberOfCores 1
+-numberOfCpus  2  
+-location Test11
+-roleInCharge Test12
+-functionalDomain Test13
+-ipAddress Test14
+-totalCdisk 3
+-totalRam 4       
+-itGroup Test15   
+-itSubGroup Test16
+-nsxZone Test17   
+-totalDisk 5      
+-serverFunction Test18
+-hostedBusinessApp Test19
+
+
+-Type Test1 -ciStatus Test2 -assetTag Test3 -manufacturer Test4 -model Test5 -serialNumber Test6 -networkIdentifier Test7 -responsiblePerson Test8 -mainUser Test9 -deploymentType Test10 -systemType Test11 -numberOfCores 1 -numberOfCpus 2 -location Test11 -roleInCharge Test12 -functionalDomain Test13 -ipAddress Test14 -totalCdisk 3 -totalRam 4 -itGroup Test15 -itSubGroup Test16 -nsxZone Test17 -totalDisk 5 -serverFunction Test18 -hostedBusinessApp Test19
