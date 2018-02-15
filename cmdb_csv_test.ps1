@@ -6,8 +6,8 @@
 
 
 [CMDletBinding()]Param(
-    [Parameter(Mandatory=$False)][String]$Type="Test",                #  Server Type - Server/Workstation
-    [Parameter(Mandatory=$False)][Int]$Memory=1                 #  Total Memory (in GB)
+    [Parameter(Mandatory=$True)][String]$Type,                #  Server Type - Server/Workstation
+    [Parameter(Mandatory=$True)][Int]$Memory                 #  Total Memory (in GB)
 )
 
 
